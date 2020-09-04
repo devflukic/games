@@ -1,0 +1,223 @@
+@import 'variables.scss';
+
+.App {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  background: $app-bg;
+  position: relative;
+}
+
+header {
+  height: 20vh;
+  background: $app-bg;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+main {
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.input-wrapper {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-wrapper label {
+  padding-left: 10px;
+}
+
+input[type="text"],
+input[type="number"] {
+  min-width: 250px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  padding: 2px 10px;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  outline: none;
+}
+
+main {
+  height: 80vh;
+  background: #fff;
+  border-radius: 30px 30px 0px 0px;
+  padding: 20px;
+}
+
+.burger_menu {
+  border: none;
+  outline: none;
+}
+
+.burger_menu img {
+  width: 35px;
+  height: 35px;
+}
+
+.add_new_user_btn {
+  background: $blue;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 2.5rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  outline: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+ul li {
+  background: $grey;
+  border-radius: 15px;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  margin: 10px;
+  position: relative;
+}
+
+ul li img {
+  border-radius: 50%;
+}
+
+.user-main-data {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: auto;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.available {
+  color: $green;
+}
+
+.taken {
+  color: $red;
+}
+
+.remove-user {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: $red;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  outline: none;
+  border: none;
+}
+
+.dialog-wrapper {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0px;
+  display: flex;
+  font-weight: 900;
+}
+
+.dialog {
+  height: 50vh;
+  width: 80%;
+  background: $grey-dialogBg;
+  margin: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 300px;
+}
+
+.dialog-title {
+  color: #000000;
+  background: $app-bg;
+  height: 60px;
+  text-align: left;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  font-weight: 900;
+}
+
+.dialog-input {
+  margin-top: 15px;
+  height: 25px;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.dialog-body {
+  padding: 10px 25px;
+}
+
+.dialog-checkbox {
+  min-width: 20px;
+  margin-right: auto;
+}
+
+.dialog-button {
+  background: $blue;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  padding: 10px;
+  min-width: 200px;
+  border-radius: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.filter-users-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+.filter-users-form input {
+  min-width: 70px;
+  width: 70px;
+  margin-left: 5px;
+}
+
+.filter-users-form input {
+  min-width: 80px;
+  width: 80px;
+}
+
+.filter-users-form .input-wrapper {
+  display: inline;
+}
+
+.filter-users-form .inputs-wrapper {
+  margin-bottom: 20px;
+}
+
+.filter-users-form button {
+  margin: auto;
+}
